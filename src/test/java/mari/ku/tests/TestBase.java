@@ -21,9 +21,9 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
-        ChromeOptions options = new ChromeOptions();
+        /*ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        Configuration.browserCapabilities = options;
+        Configuration.browserCapabilities = options;*/
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browserSize = "1280x1024";
@@ -41,14 +41,6 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
 
-        /*Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "91");
-        Configuration.browserSize = System.getProperty("browserSize", "1280x1024");
-
-        String remoteUrl = System.getProperty("remoteUrl");
-        String user = System.getProperty("user");
-        String password = System.getProperty("password");
-        Configuration.remote = "https://" + user + ":" + password + "@" + remoteUrl;*/
     }
 
     @AfterEach
