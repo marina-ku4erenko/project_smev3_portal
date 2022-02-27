@@ -30,7 +30,6 @@ dependencies {
     testImplementation 'org.aeonbits.owner:owner:1.0.12'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.29'
-
 }
 
 tasks.withType(Test) {
@@ -41,5 +40,17 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+
+task test_positive(type: Test) {
+    useJUnitPlatform {
+        includeTags "positive"
+    }
+}
+
+task test_negative(type: Test) {
+    useJUnitPlatform {
+        includeTags "negative"
     }
 }

@@ -25,19 +25,19 @@ public class TestBase {
                 credentials.password(),
                 System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub"));
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
-        Configuration.browserCapabilities = options;
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        Configuration.browserCapabilities = options;
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "91");
-        Configuration.browserSize = "1280x1024";
+        Configuration.browserSize = System.getProperty("browserSize", "1280x1024");
 
     }
 

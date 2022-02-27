@@ -4,6 +4,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import mari.ku.pages.SportmasterPage;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -14,6 +15,7 @@ public class SportmasterTests extends TestData {
     SportmasterPage sportmasterPage = new SportmasterPage();
 
     @Owner("marina-ku4erenko")
+    @Tag("positive")
     @Feature("Смена региона доставки")
     @CsvSource(value = {
             "Новосибирск| г Новосибирск",
@@ -32,6 +34,7 @@ public class SportmasterTests extends TestData {
     }
 
     @Owner("marina-ku4erenko")
+    @Tag("positive")
     @Feature("Поиск товаров")
     @ValueSource(strings = {"Купальник", "Коньки"})
     @ParameterizedTest(name = "Поиск товара {0} и проверка отображения текста '{0}' в каждой карточке товара")
@@ -46,6 +49,7 @@ public class SportmasterTests extends TestData {
     }
 
     @Owner("marina-ku4erenko")
+    @Tag("positive")
     @Feature("Сравнение")
     @Test
     @DisplayName("Проверка добавления и удаления товаров из сравнения")
@@ -61,6 +65,7 @@ public class SportmasterTests extends TestData {
     }
 
     @Owner("marina-ku4erenko")
+    @Tag("positive")
     @Feature("Корзина")
     @Test
     @DisplayName("Проверка добавления и удаления товаров из корзины")
@@ -76,6 +81,7 @@ public class SportmasterTests extends TestData {
     }
 
     @Owner("marina-ku4erenko")
+    @Tag("negative")
     @Feature("Авторизация")
     @Test
     @DisplayName("Проверка формирования ошибки 'Некорректный код подтверждения' при авторизации")
@@ -89,6 +95,7 @@ public class SportmasterTests extends TestData {
     }
 
     @Owner("marina-ku4erenko")
+    @Tag("negative")
     @Feature("Корзина")
     @Test
     @DisplayName("Проверка формирования ошибки 'Неверный код' на корзине")
