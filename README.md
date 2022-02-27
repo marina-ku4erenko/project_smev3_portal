@@ -2,7 +2,7 @@
 
 ## :clipboard: Содержание
 
->  - [Что было автоматизировано?](#pushpin)
+>  - [Что было автоматизировано?](#Что было автоматизировано?)
 >
 >  - [Какой технологический стек использовался?](#hammer_and_wrench)
 >
@@ -13,7 +13,7 @@
 >  - [Имеются ли уведомления о результатах прогона тестов?](#airplane)
 
 
-## <a name=":pushpin:"></a> Что было автоматизировано?
+## :pushpin: <a name="Что было автоматизировано?"></a>
 
 **В рамках проекта автоматизирован следующий набор UI проверок на сайте Sportmaster:**
 
@@ -80,7 +80,7 @@
 >  - <code>SIZE</code> — размер окна браузера, в котором будут выполняться тесты (по умолчанию - <code>1280x1024</code>).
 
 > Ссылка на job в Jenkins:
-> [007_marinka_ku_homework13] (https://jenkins.autotests.cloud/job/007_marinka_ku_homework13/)
+> [007_marinka_ku_homework13](https://jenkins.autotests.cloud/job/007_marinka_ku_homework13/)
 
 ## :heavy_check_mark: Где можно увидеть отчёт о прогоне тестов?
 
