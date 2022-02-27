@@ -13,7 +13,7 @@
 >  - [Имеются ли уведомления о результатах прогона тестов?](#airplane)
 
 
-## :pushpin: Что было автоматизировано?
+## <a name=":pushpin:"></a> Что было автоматизировано?
 
 **В рамках проекта автоматизирован следующий набор UI проверок на сайте Sportmaster:**
 
@@ -26,20 +26,20 @@
 
 ## :hammer_and_wrench: Какой технологический стек использовался?
 
->  <p align="center">
->  <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
->  <img width="6%" title="Java" src="images/logo/Java.svg">
->  <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
->  <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
->  <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
->  <img width="6%" title="Gradle" src="images/logo/Gradle.svg">
->  <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
->  <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
->  <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
->  <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
->  <img width="6%" title="Allure_TO" src="images/logo/Allure_TO.svg">
->  <img width="6%" title="Jira" src="images/logo/Jira.svg">
->  </p>
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="images/logo/Java.svg">
+<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="6%" title="Allure_TO" src="images/logo/Allure_TO.svg">
+<img width="6%" title="Jira" src="images/logo/Jira.svg">
+</p>
 
 
 ## :arrow_forward: Как можно запустить тесты?
@@ -79,6 +79,9 @@
 >  - <code>VERSION</code> — версия браузера, в котором будут выполняться тесты (по умолчанию - <code>91.0</code>);
 >  - <code>SIZE</code> — размер окна браузера, в котором будут выполняться тесты (по умолчанию - <code>1280x1024</code>).
 
+> Ссылка на job в Jenkins:
+> [007_marinka_ku_homework13] (https://jenkins.autotests.cloud/job/007_marinka_ku_homework13/)
+
 ## :heavy_check_mark: Где можно увидеть отчёт о прогоне тестов?
 
 >  Для предоставления отчётной информации используется <code>Allure</code>.
@@ -101,7 +104,7 @@
 >  Для уведомления заинтересованных лиц используется специально настроенный бот в <code>Telegram</code>.
 >  После выполнения каждой сборки формируется и отправляется в группы, где состоит бот, сообщение с отчётом о прогоне.
 
->  Пример такого отчёта:
+>  Пример такого сообщения:
 >  <p align="center">
 >  <img title="telegram_report.png" src="images/screens/telegram_report.png">
 >  </p>
