@@ -37,7 +37,7 @@ public class SportmasterTests extends TestData {
     @Tag("positive")
     @Feature("Поиск товаров")
     @ValueSource(strings = {"Купальник", "Коньки"})
-    @ParameterizedTest(name = "Поиск товара {0} и проверка отображения текста '{0}' в каждой карточке товара")
+    @ParameterizedTest(name = "Поиск товара {0} и проверка отображения текста {0} в каждой карточке товара")
     @DisplayName("Проверка работы поиска товаров")
     void searchAndCheckProductTest(String searchItem) {
         sportmasterPage.
