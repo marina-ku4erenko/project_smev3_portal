@@ -21,13 +21,17 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
-        /*ChromeOptions options = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        Configuration.browserCapabilities = options;*/
+        Configuration.browserCapabilities = options;
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browserSize = "1280x1024";
-        //Configuration.holdBrowserOpen = true;
         //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         String remoteUrl = System.getProperty("remoteUrl");
@@ -35,11 +39,7 @@ public class TestBase {
         String password = System.getProperty("password");
         Configuration.remote = "https://" + user + ":" + password + "@" + remoteUrl;
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
 
-        Configuration.browserCapabilities = capabilities;
 
     }
 
