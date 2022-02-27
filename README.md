@@ -83,6 +83,21 @@
 
 > Ссылка на job в Jenkins:
 > [007_marinka_ku_homework13](https://jenkins.autotests.cloud/job/007_marinka_ku_homework13/)
+> 
+> Главная страница Job:
+>  <p align="center">
+>  <img title="jenkins_job" src="images/screens/jenkins_job.png">
+>  </p>
+>
+> Пример заполнения параметров в Job:
+>  <p align="center">
+>  <img title="example_jenkins" src="images/screens/example_jenkins.png">
+>  </p>
+>
+>  Дополнительные параметры сборки:
+>  - <code>COMMENT</code> — комментарий, используемый в отчётном сообщении в Telegram (по умолчанию - <code>Домашняя работа 13</code>);
+>  - <code>ENVIRONMENT</code> — окружение, на котором будут выполнться тесты и указываемое в отчётном сообщении в Telegram (по умолчанию - <code>prod</code>);
+
 
 <a name="отчёт"></a>
 ## :heavy_check_mark: Где можно увидеть отчёт о прогоне тестов?
@@ -91,6 +106,16 @@
 >  После выполнения каждой сборки формируется отчёт, в котором можно увидеть перечень прошедших и упавших тестов в графическом и текстовом виде.
 >  К каждому тесту прилагается скриншот, логи, видео прохождения теста.
 >  Дополнительно выполнена интеграция с <code>Allure TestOps</code>, там так же можно просматривать отчёт.
+
+> Для перехода к отчёту следует использовать следующие значки-ссылки в истории сборок:
+>  <p align="center">
+>  <img title="reports" src="images/screens/reports.png">
+>  </p>
+
+> Или значки-ссылки на странице сборки:
+>  <p align="center">
+>  <img title="reports2" src="images/screens/reports2.png">
+>  </p>
 
 >  Пример отчёта в <code>Allure</code>, главная страница:
 >  <p align="center">
